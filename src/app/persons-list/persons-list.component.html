@@ -1,0 +1,19 @@
+<h2>
+  People!
+</h2>
+
+<ul>
+
+  <li *ngFor=' let onePerson of People'>
+    <h3>
+      <a [routerLink] = "['/detail',1]" >
+        {{onePerson.Name}}
+      </a>
+    </h3>
+    <p>
+      {{onePerson.Salary}}
+    </p>
+  </li>
+
+</ul>
+
